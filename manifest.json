@@ -8,5 +8,21 @@
   "files": {
     "app.R": {},
     "data/raw/Chocolate_Sales.csv": {}
+  },
+  "packages": {
+    "shiny": {},
+    "bslib": {},
+    "ggplot2": {},
+    "dplyr": {},
+    "tidyr": {},
+    "plotly": {},
+    "DT": {},
+    "lubridate": {},
+    "bsicons": {},
+    "scales": {},
+    "rmarkdown": {},
+    "knitr": {},
+    "htmltools": {},
+    "jsonlite": {}
   }
 }

@@ -41,28 +41,25 @@ Or in RStudio: open `cocoaboard.Rproj`, then run the app (e.g. Run App on `app.R
 
 ### manifest.json
 
-A **`manifest.json`** is included in the project root so Posit Connect can discover and deploy the app (“A manifest.json file was not found” is avoided). It declares `appmode: shiny` and `entrypoint: app.R`.
+A **`manifest.json`** is included in the project root so Posit Connect can discover the app and install R packages. It declares `appmode: shiny`, `entrypoint: app.R`, and lists required packages (shiny, bslib, ggplot2, dplyr, tidyr, plotly, DT, lubridate, bsicons, scales, rmarkdown, knitr, htmltools, jsonlite).
 
-To regenerate a full manifest (including R package metadata) from your machine, run from the project root:
+**If deployment fails with “package X is missing”**, regenerate a full manifest from your machine (so Connect gets exact versions and CRAN source). From the project root:
 
 ```r
+# In R, with working directory = project root
 install.packages("rsconnect")
 rsconnect::writeManifest(appDir = ".", appPrimaryDoc = "app.R", appMode = "shiny")
 ```
 
-Then commit the updated `manifest.json` if you want Connect to use your exact package snapshot.
+Or run the helper script:
 
-### Optional: lock dependencies with renv
-
-```r
-# In project root
-install.packages("renv")
-renv::init()
-# Run app, then:
-renv::snapshot()
+```bash
+Rscript scripts/write_manifest.R
 ```
 
-Commit `renv.lock` and `renv/` so Connect uses the same package versions.
+Then commit and push the updated `manifest.json`.
+
+**Note:** Posit Connect Cloud uses only `manifest.json` for R dependencies (it does not use renv).
 
 ## Project structure
 
