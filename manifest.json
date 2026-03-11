@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "platform": "4.4.0",
+  "metadata": {
+    "appmode": "shiny",
+    "entrypoint": "app.R"
+  },
+  "files": {
+    "app.R": {},
+    "data/raw/Chocolate_Sales.csv": {}
+  }
+}
