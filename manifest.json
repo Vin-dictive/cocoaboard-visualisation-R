@@ -10,19 +10,19 @@
     "data/raw/Chocolate_Sales.csv": {}
   },
   "packages": {
-    "shiny": {},
-    "bslib": {},
-    "ggplot2": {},
-    "dplyr": {},
-    "tidyr": {},
-    "plotly": {},
-    "DT": {},
-    "lubridate": {},
-    "bsicons": {},
-    "scales": {},
-    "rmarkdown": {},
-    "knitr": {},
-    "htmltools": {},
-    "jsonlite": {}
+    "shiny": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "bslib": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "ggplot2": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "dplyr": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "tidyr": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "plotly": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "DT": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "lubridate": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "bsicons": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "scales": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "rmarkdown": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "knitr": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "htmltools": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" },
+    "jsonlite": { "Source": "CRAN", "Repository": "https://cloud.r-project.org" }
   }
 }
