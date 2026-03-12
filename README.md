@@ -7,8 +7,8 @@ Chocolate Sales Dashboard — R/Shiny port of the visualization components from 
 ## Features
 
 - **Filters:** Date range, Country (multi), Product (multi)
-- **Value boxes:** Total Revenue, Total Boxes Shipped, Active Sales Reps, Avg Revenue, YoY Revenue, MoM Revenue
-- **Choropleth map:** Sales by country (Plotly)
+- **Value boxes:** Total Revenue, Total Boxes Shipped, Active Sales Reps, Avg Revenue, YoY Revenue, MoM Revenue (with loading spinners)
+- **Revenue by Product:** Pie chart (filtered by date, country, product)
 - **Leaderboard table:** Rank, Revenue, Transactions, Boxes, Avg Deal, Rev Share + summary row
 - **Revenue trend:** Line chart for top 5 sales reps by month
 
@@ -21,7 +21,7 @@ Chocolate Sales Dashboard — R/Shiny port of the visualization components from 
 
 ```r
 # Install dependencies (once)
-install.packages(c("shiny", "bslib", "ggplot2", "dplyr", "tidyr", "plotly", "DT", "lubridate", "bsicons", "scales"))
+install.packages(c("shiny", "bslib", "ggplot2", "dplyr", "tidyr", "plotly", "DT", "lubridate", "bsicons", "scales", "shinycssloaders"))
 
 # From project root (cocoaboard-visualisation-R/)
 shiny::runApp()
